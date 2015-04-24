@@ -22,7 +22,7 @@ ssh-copy-id -i .ssh/id_dsa.pub alex@Maquina-A
 
 Con esto conseguimos conectarnos mediante ssh a la Maquina-A sin contraseña
 
-![ssh sin contraseña](ssh "conexión ssh sin contraseña")
+![ssh sin contraseña](Imagenes/ssh.png "conexión ssh sin contraseña")
 
 ##Programar tareas con crontab
 
@@ -34,5 +34,5 @@ rsync -avz -e ssh alex@Maquina-A:/var/www/ /var/www/
 
 Para ello editamos el archivo /etc/crontab dejándolo así:
 
-![Fichero crontab](crontab "Fichero crontab")
+![Fichero crontab](Imagenes/crontab.png "Fichero crontab")
 
