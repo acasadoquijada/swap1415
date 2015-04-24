@@ -38,13 +38,13 @@ apt-get install nginx
 
 Para balancear la carga debemos editar el archivo `/etc/nginx/conf.d/default.conf` de la siguiente manera:
 
-![Archivo configuración nginx](configuracion_nginx)
+![Archivo configuración nginx](configuracion_nginx "Archivo configuración nginx")
 
 Tras esto, reiniciamos nginx y comprobamos que funciona el balanceo usando `curl http://ip-balanceador`
 
 En este caso estamos usando el algoritmo de balanceo de carga round-robin
 
-![Balanceo R-R usando nginx](balanceo-nginx)
+![Balanceo R-R usando nginx](balanceo-nginx "Balanceo R-R usando nginx")
 
 Para usar el algoritmo de balanceo basado en prioridades basta con editar lo siguiente:
 
@@ -57,7 +57,7 @@ server ip-maquina-B weight=2;
 
 Siendo weight la prioridad, en este caso le hemos dado mas peso a la máquina B
 
-![Balanceo prioridad usando nginx](balanceo-nginx-prioridad)
+![Balanceo prioridad usando nginx](balanceo-nginx-prioridad "Balanceo prioridad usando nginx")
 
 
 ##haproxy
@@ -70,11 +70,11 @@ Para instalarlo basta con usar: `sudo apt-get install haproxy joe`
 
 Para usar el algoritmo de carga round-robin en haproxy editamos su fichero de configuración, `/etc/haproxy/haproxy.cfg`, de la siguiente forma:
 
-![Archivo configuración haproxy](configuracion-haproxy)
+![Archivo configuración haproxy](configuracion-haproxy "Archivo configuración haproxy")
 
 Ahora comprobamos que funciona correctamente, de la misma forma que con nginx
 
-![Balanceo R-R usando haproxy](balanceo-haproxy-rr)
+![Balanceo R-R usando haproxy](balanceo-haproxy-rr "Balanceo R-R usando haproxy")
 
 Para utilizar un algoritmo por prioridad simplemente hay que editar lo siguiente del archivo de configuración
 ~~~
@@ -86,7 +86,7 @@ backend servers
 
 Al igual que en nginx, le hemos dado mayor prioridad a la máquina-B respecto a la A
 
-![Balanceo prioridad usando haproxy](balanceo-haproxy-prioridad)
+![Balanceo prioridad usando haproxy](balanceo-haproxy-prioridad "Balanceo prioridad usando haproxy")
 
 
 
