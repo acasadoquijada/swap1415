@@ -57,7 +57,7 @@ server ip-maquina-B weight=2;
 
 Siendo weight la prioridad, en este caso le hemos dado mas peso a la máquina B
 
-![Balanceo prioridad usando nginx](balanceo-nginx-prioridad "Balanceo prioridad usando nginx")
+![Balanceo prioridad usando nginx](balanceo-nginx-prioridad.png "Balanceo prioridad usando nginx")
 
 
 ##haproxy
