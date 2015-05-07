@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for i in {1..10}
-do
-	siege -b -t60s -v http://192.168.49.130/ >> Resultados-siege-haproxy-rr-$i.txt
-	echo -e "\n" >> Resultados-siege-haproxy-rr-$i.txt
-done

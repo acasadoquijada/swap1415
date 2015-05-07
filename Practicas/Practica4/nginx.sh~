@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for i in {1..10}
-do
-	ab -n 1000 -c 5 http://192.168.49.130/ >> Resultadosnginxab-pesos.txt
-	echo -e "\n" >> Resultadosnginxab-pesos.txt
-done
