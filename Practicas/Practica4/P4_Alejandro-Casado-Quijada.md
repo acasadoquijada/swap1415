@@ -14,7 +14,7 @@ Vamos a ejecutar cada herramienta un total de 10 veces para cada uno de los sigu
 * Balanceador con nginx
 * Balanceador con haproxy
 
-Para mas información sobre los resultados consultar [Con titulo](Resultados/Resultados-Apache-Benchmark.ods "titulo")
+Para mas información sobre los resultados consultar [aqui](Resultados/ "Resultados")
 
 ##Resultados Apache Benchmark
 
