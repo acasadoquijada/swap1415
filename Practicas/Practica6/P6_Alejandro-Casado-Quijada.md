@@ -1,4 +1,4 @@
-+#Práctica 6. Discos en RAID
+#Práctica 6. Discos en RAID
 
 El objetivo de esta práctica es configurar dos discos en RAID1 (estos discos se añaden en esta práctica) y comprobar que dicho RAID funciona correctamente.
 
