@@ -1,4 +1,4 @@
-#Práctica 6. Discos en RAID
++#Práctica 6. Discos en RAID
 
 El objetivo de esta práctica es configurar dos discos en RAID1 (estos discos se añaden en esta práctica) y comprobar que dicho RAID funciona correctamente.
 
@@ -39,6 +39,7 @@ Comprobamos la información de `/proc/mdstat`
 Podemos ver que nos indica que el RAID sigue funcionando, aunque el disco sdb tenga un fallo.
 
 Ahora eliminamos el disco defectuoso y volvemos a comprobar la información de `/proc/mdstat`
+
 ~~~
 mdadm --manage /dev/md/mdo --remove /dev/sdb
 ~~~
@@ -46,6 +47,11 @@ mdadm --manage /dev/md/mdo --remove /dev/sdb
 
 El RAID sigue operativo a pesar de contar con solo una unidad, en este caso sdc
 
+Volvemos a añadir el disco que hemos retirado con `mdadm --manage /dev/md/mdo --add /dev/sdb` y se comprueba la información de `/proc/mdstat`
+
+![simulacion_fallo](Imagenes/recuperacion.png "Información /proc/mdstat")
+
+Apreciamos como el disco que acabamos de añadir se esta "recuperando"
 
 
 
