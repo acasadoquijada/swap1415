@@ -33,6 +33,7 @@ mdadm --manage /dev/md/mdo --fail /dev/sdb
 ~~~
 
 Comprobamos la información de `/proc/mdstat`
+
 ![simulacion_fallo](Imagenes/infoAntesBorrarHdd.png "Información /proc/mdstat")
 
 Podemos ver que nos indica que el RAID sigue funcionando, aunque el disco sdb tenga un fallo.
